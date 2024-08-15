@@ -1,3 +1,1 @@
 # QualitativeTrader
-
-Test
