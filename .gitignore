@@ -25,3 +25,9 @@ requirements.txt
 *.njsproj
 *.sln
 *.sw?
+
+# Python
+*.pyc
+__pycache__
+*.log
+media/
