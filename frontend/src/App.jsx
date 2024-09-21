@@ -4,17 +4,16 @@ import './App.css'
 function App() {
   const [formData, setFormData] = useState({ email: '' });
 
-const handleInputChange = (e) => {
+  const handleInputChange = (e) => {
     const {value} = e.target;
     setFormData({
-        email: value
+      email: value
     });
-};
+  };
 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData)
     const response = await fetch('http://localhost:8000/register/', {
         method: 'POST',
         body: JSON.stringify(formData),
@@ -22,7 +21,7 @@ const handleInputChange = (e) => {
 
     const data = await response.json();
     console.log(data);
-};
+  };
 
 
   
